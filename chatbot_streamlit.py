@@ -1,5 +1,5 @@
-from chatbot_chain import get_chatbot_chain
 import streamlit as st
+from chatbot_chain import get_chatbot_chain
 
 chain = get_chatbot_chain()
 
