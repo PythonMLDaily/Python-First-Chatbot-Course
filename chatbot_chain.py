@@ -21,3 +21,5 @@ def get_chatbot_chain():
                                                   retriever=vectorstore.as_retriever(),
                                                   memory=memory)
     return chain
+
+
