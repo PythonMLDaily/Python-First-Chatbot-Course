@@ -1,16 +1,17 @@
-from chatbot_chain import get_chatbot_chain
 import sys
+from chatbot_chain import get_chatbot_chain
 
 chain = get_chatbot_chain()
-
 while True:
-    query = input('Prompt (or type "exit" to quit): ')
+    try:
+        query = input('Prompt (or type "exit" to quit): ')
 
-    if query == "exit":
-        print('Exiting')
-        sys.exit()
+        if query == "exit":
+            print('Exiting')
+            sys.exit()
 
-    response = chain({"question": query})
+        response = chain({"question": query})
 
-    print("Answer: " + response["answer"])
-
+        print("Answer: " + response["answer"])
+    except Exception as e:
+        print(f"Error: {e}")
