@@ -1,2 +1,2 @@
-langchain~=0.0.352
-streamlit~=1.29.0
+langchain
+streamlit
