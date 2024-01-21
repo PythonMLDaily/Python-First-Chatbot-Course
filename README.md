@@ -48,8 +48,6 @@ requirements.txt: List of Python dependencies.
 Credits
 LangChain: Link to LangChain Repo
 Streamlit: Link to Streamlit
-License
-This project is licensed under the MIT License.
 
 Created by:
 <a href="https://github.com/PovilasKorop" target="_blank"> `[Povilas Korop]` </a>
