@@ -10,7 +10,7 @@ while True:
         print('Exiting')
         sys.exit()
 
-    response = chain({"question": query})
+    response = chain.invoke({"question": query})
 
     print("Answer: " + response["answer"])
 

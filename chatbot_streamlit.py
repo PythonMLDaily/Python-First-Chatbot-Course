@@ -24,7 +24,7 @@ if query := st.chat_input("Please ask your question here:"):
 
     with st.chat_message("assistant", avatar=bot_logo):
         message_placeholder = st.empty()
-        result = chain({"question": query})
+        result = chain.invoke({"question": query})
         message_placeholder.markdown(result['answer'])
 
     st.session_state.messages.append({"role": "bot", "content": result['answer']})
